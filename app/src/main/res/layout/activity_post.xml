@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CoronaActivity">
-
+    tools:context=".PostActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="34dp"
@@ -38,15 +37,15 @@
             android:layout_weight="1"/>
     </LinearLayout>
     <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/postrecyclerview"
         android:layout_below="@+id/topnav"
-        android:id="@+id/casesrecyclerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
 
         tools:ignore="MissingConstraints"/>
-
     <ProgressBar
-        android:id="@+id/progressbarcase"
+        android:id="@+id/progressbarpost"
         android:layout_centerHorizontal="true"
         android:max="100"
         android:progress="0"
@@ -54,5 +53,4 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/topnav"/>
-
 </RelativeLayout>

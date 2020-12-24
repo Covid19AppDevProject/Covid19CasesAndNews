@@ -9,15 +9,22 @@
         android:allowBackup="true"
         android:icon="@drawable/covid19"
         android:label="@string/app_name"
-
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EarthquakeLoader"></activity>
+        <activity android:name=".PostAdapter"></activity>
+        <activity
+            android:name=".PostActivity"
+            android:label="Covid-19 Updates"
+            android:theme="@style/AppTheme2" />
+        <activity android:name=".EarthquakeLoader" />
         <activity android:name=".List_item" />
         <activity android:name=".EarthAdapter" />
         <activity android:name=".Earth" />
         <activity android:name=".QueryUtils" />
-        <activity android:name=".CoronaActivity" />
+        <activity
+            android:name=".CoronaActivity"
+            android:label="Covid-19 Cases"
+            android:theme="@style/AppTheme2" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

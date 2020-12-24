@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/postji">
+        <LinearLayout
+            android:id="@+id/postheader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/covid19"
+                android:layout_centerVertical="true"
+                android:id="@+id/topicimage"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#ffffff"
+                />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/topicname"
+                    android:text="Unknown User"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:textColor="#000000"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/topicimage"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/posttime"
+                    android:text="Unknown User"
+
+                    android:textSize="12sp"
+                    android:textColor="@android:color/darker_gray"
+
+                    android:layout_toRightOf="@id/topicimage"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:id="@+id/justline"
+            android:layout_below="@+id/postheader"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center"
+            android:background="#c0c0c0"/>
+        <TextView
+            android:layout_below="@+id/justline"
+            android:id="@+id/postdes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text=""
+            android:padding="4dp"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:layout_below="@+id/postdes"
+            android:id="@+id/postlink1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#0E75D3"
+            android:text=""
+            android:padding="4dp"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            />
+
+
+        <ImageView
+            android:id="@+id/postimages"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/postdes"
+            android:src="@drawable/covid19"
+            tools:ignore="WebViewLayout" />
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/justline2"
+        android:layout_below="@+id/postji"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+
+        android:layout_gravity="center"
+        android:background="#c0c0c0"/>
+</RelativeLayout>

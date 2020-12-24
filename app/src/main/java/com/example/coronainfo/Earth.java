@@ -1,49 +1,63 @@
 package com.example.coronainfo;
 
 public class Earth {
- private String mcountry;
- private long mcases;
-    private long mtodayCases;
-    private long mdeaths;
-    private long mtodayDeaths;
-    private long mrecovered;
-    private long mactive;
-    private long mcritical;
 
-     public  Earth( String a,long b,long c,long d,long e,long f,long g,long h){
-         mcountry=a;
-         mcases=b;
-         mtodayCases=c;
-         mdeaths=d;
-         mtodayDeaths=e;
-         mrecovered=f;
-         mactive=g;
-         mcritical=h;
 
-    }
-    public String getMcountry() {
-        return mcountry;
+
+    private String _id;
+    private String CountryStatename;
+    private String TotalCase;
+    private String Activecase;
+    private String Recoveredcase;
+    private String Death;
+    private String __v;
+    private String PostDescription;
+    private String time;
+    private String postlink;
+    private String postimageslink;
+
+    public String getCountryStatename() {
+        return CountryStatename;
     }
 
-    public long getMcases() {
-        return mcases;
+    public String getPostDescription() {
+        return PostDescription;
     }
-    public long getMtodayCases() {
-        return mtodayCases;
+
+    public String getPostimageslink() {
+        return postimageslink;
     }
-    public long getMdeaths() {
-        return mdeaths;
+
+    public String getTime() {
+        return time;
     }
-    public long getMtodayDeaths() {
-        return mtodayDeaths;
+
+    public String getPostlink() {
+        return postlink;
     }
-    public long getMrecovered() {
-        return mrecovered;
+
+
+    public String getRecoveredcase() {
+        return Recoveredcase;
     }
-    public long getMactive() {
-        return mactive;
+
+    public String getTotalCase() {
+        return TotalCase;
     }
-    public long getMcritical() {
-        return mcritical;
+
+    public String getDeath() {
+        return Death;
+    }
+
+    public String getActivecase() {
+        return Activecase;
+    }
+
+    public String get_id() {
+        return _id;
+    }
+
+    public String get__v() {
+        return __v;
     }
 }
